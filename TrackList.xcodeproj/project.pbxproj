@@ -58,16 +58,56 @@
 		B174E54627BAD2CE0069C218 /* TrackList */ = {
 			isa = PBXGroup;
 			children = (
-				B174E54727BAD2CE0069C218 /* AppDelegate.swift */,
-				B174E54927BAD2CE0069C218 /* SceneDelegate.swift */,
-				B174E54D27BAD2CE0069C218 /* Main.storyboard */,
-				B174E55B27BB13AF0069C218 /* TrackListViewController.swift */,
-				B174E55D27BB1C390069C218 /* Track.swift */,
-				B174E55027BAD2D00069C218 /* Assets.xcassets */,
-				B174E55227BAD2D00069C218 /* LaunchScreen.storyboard */,
-				B174E55527BAD2D00069C218 /* Info.plist */,
+				B174E56127BB22A10069C218 /* Models */,
+				B174E56027BB22960069C218 /* ViewControllers */,
+				B174E56227BB22B00069C218 /* Storyboards */,
+				B174E56327BB22C00069C218 /* Resources */,
+				B174E55F27BB228A0069C218 /* App */,
 			);
 			path = TrackList;
+			sourceTree = "<group>";
+		};
+		B174E55F27BB228A0069C218 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B174E54727BAD2CE0069C218 /* AppDelegate.swift */,
+				B174E54927BAD2CE0069C218 /* SceneDelegate.swift */,
+				B174E55527BAD2D00069C218 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B174E56027BB22960069C218 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B174E55B27BB13AF0069C218 /* TrackListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B174E56127BB22A10069C218 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B174E55D27BB1C390069C218 /* Track.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B174E56227BB22B00069C218 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B174E54D27BAD2CE0069C218 /* Main.storyboard */,
+				B174E55227BAD2D00069C218 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B174E56327BB22C00069C218 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B174E55027BAD2D00069C218 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +335,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2HBBQ5KF9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrackList/Info.plist;
+				INFOPLIST_FILE = TrackList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2HBBQ5KF9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrackList/Info.plist;
+				INFOPLIST_FILE = TrackList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
