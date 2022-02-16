@@ -15,7 +15,7 @@ class TrackListViewController: UITableViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.rowHeight = 80
     }
 
     // MARK: - Table view data source
@@ -31,6 +31,8 @@ class TrackListViewController: UITableViewController {
         
         content.text = track.song
         content.secondaryText = track.artist
+        content.image = UIImage(named: track.title)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         
         cell.contentConfiguration = content
         return cell
