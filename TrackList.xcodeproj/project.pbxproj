@@ -14,6 +14,7 @@
 		B174E55427BAD2D00069C218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B174E55227BAD2D00069C218 /* LaunchScreen.storyboard */; };
 		B174E55C27BB13AF0069C218 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B174E55B27BB13AF0069C218 /* TrackListViewController.swift */; };
 		B174E55E27BB1C390069C218 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B174E55D27BB1C390069C218 /* Track.swift */; };
+		B1B8C2B427BD9EB00017FE69 /* TrackDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8C2B327BD9EB00017FE69 /* TrackDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B174E55527BAD2D00069C218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B174E55B27BB13AF0069C218 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
 		B174E55D27BB1C390069C218 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		B1B8C2B327BD9EB00017FE69 /* TrackDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B174E55B27BB13AF0069C218 /* TrackListViewController.swift */,
+				B1B8C2B327BD9EB00017FE69 /* TrackDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			files = (
 				B174E54827BAD2CE0069C218 /* AppDelegate.swift in Sources */,
 				B174E54A27BAD2CE0069C218 /* SceneDelegate.swift in Sources */,
+				B1B8C2B427BD9EB00017FE69 /* TrackDetailsViewController.swift in Sources */,
 				B174E55C27BB13AF0069C218 /* TrackListViewController.swift in Sources */,
 				B174E55E27BB1C390069C218 /* Track.swift in Sources */,
 			);

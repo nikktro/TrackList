@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,6 +24,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Wks-rf-ZX2" kind="show" id="EKS-fz-fcX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,6 +39,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txr-ds-V48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1233" y="-88"/>
+        </scene>
+        <!--Track Details View Controller-->
+        <scene sceneID="7dV-HE-0OX">
+            <objects>
+                <viewController id="Wks-rf-ZX2" customClass="TrackDetailsViewController" customModule="TrackList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zvV-Dy-rmx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gKd-8t-83f">
+                                <rect key="frame" x="20" y="116" width="335" height="415.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AoN-CD-6EJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="375"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="375" id="0A7-6O-X32"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZp-rQ-8AH">
+                                        <rect key="frame" x="0.0" y="395" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Yg-94-4Cc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Yg-94-4Cc" firstAttribute="trailing" secondItem="gKd-8t-83f" secondAttribute="trailing" constant="20" id="H2P-LE-ScW"/>
+                            <constraint firstItem="gKd-8t-83f" firstAttribute="leading" secondItem="8Yg-94-4Cc" secondAttribute="leading" constant="20" id="PCv-6J-1YR"/>
+                            <constraint firstItem="gKd-8t-83f" firstAttribute="top" secondItem="8Yg-94-4Cc" secondAttribute="top" constant="20" id="XeU-Ho-qUK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9qW-G4-Ajk"/>
+                    <connections>
+                        <outlet property="trackCoverImageView" destination="AoN-CD-6EJ" id="nOk-gD-ryL"/>
+                        <outlet property="trackNameLabel" destination="SZp-rQ-8AH" id="VLH-HZ-p5a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHM-vm-74N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2119" y="-89"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t0A-f3-DYw">
