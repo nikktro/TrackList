@@ -24,9 +24,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Wks-rf-ZX2" kind="show" id="EKS-fz-fcX"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,6 +32,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Track List" id="9C0-bj-Nel"/>
+                    <connections>
+                        <segue destination="Wks-rf-ZX2" kind="show" identifier="showDetails" id="SXE-6Q-Ryz"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txr-ds-V48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
