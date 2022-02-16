@@ -26,9 +26,13 @@ class TrackListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "trackID", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        let track = trackList[indexPath.row]
         
-        cell.textLabel?.text = trackList[indexPath.row].song //TODO: - deprecated
+        content.text = track.song
+        content.secondaryText = track.artist
         
+        cell.contentConfiguration = content
         return cell
     }
 
